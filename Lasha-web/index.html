@@ -4,6 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>LASHA LASHA — stick slay repeat</title>
+
+<!-- SEO & Social Media Share Meta Tags -->
+<meta name="description" content="LASHA LASHA ขนตาปลอมแยกกระจุกมีกาวในตัว สวย ปัง ได้ทุกสไตล์ stick slay repeat">
+<meta property="og:title" content="LASHA LASHA — stick slay repeat">
+<meta property="og:description" content="ขนตาปลอมแยกกระจุกมีกาวในตัว 4 สไตล์ยอดนิยม">
+<meta property="og:image" content="images/logo.png">
+<meta property="og:type" content="website">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
   :root{
@@ -24,7 +32,6 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
     overflow: hidden;
   }
-
  
   nav{
     display: flex; justify-content: space-between; align-items: center;
@@ -36,7 +43,6 @@
   }
   .logo{font-family: Georgia,serif; font-size: 22px; letter-spacing: 5px; color: var(--maroon-dark); font-weight: 600; text-decoration: none; flex-shrink: 0;}
   
-
   .nav-right-group {
     display: flex;
     align-items: center;
@@ -51,14 +57,12 @@
   .social-nav{display: flex; gap: 15px; align-items: center; flex-shrink: 0;}
   .social-nav a{color: var(--muted); font-size: 22px; transition: .3s;}
 
-  
   .main-container {
     display: flex;
     height: calc(100vh - 120px);
     width: 100%;
   }
 
- 
   .left-gallery {
     flex: 0.8;
     position: relative;
@@ -94,132 +98,56 @@
   .dot{width: 6px; height: 6px; border-radius: 50%; background: rgba(58,20,23,0.2); cursor: pointer; transition: .3s;}
   .dot.active{background: var(--maroon-dark); width: 18px; border-radius: 3px;}
 
-
-
-
  .right-dashboard{
     flex:1.4;
     position:relative;
     overflow-y:auto;
     padding:40px 4vw;
     border-left:1px solid rgba(84,34,38,.08);
-
     background:
-    radial-gradient(circle at top right,
-    rgba(178,127,86,.18),
-    transparent 35%),
-
-    radial-gradient(circle at bottom left,
-    rgba(84,34,38,.08),
-    transparent 45%),
-
-    linear-gradient(135deg,
-    #fffefe 0%,
-    #fff7f4 45%,
-    #f7ece8 100%);
+    radial-gradient(circle at top right, rgba(178,127,86,.18), transparent 35%),
+    radial-gradient(circle at bottom left, rgba(84,34,38,.08), transparent 45%),
+    linear-gradient(135deg, #fffefe 0%, #fff7f4 45%, #f7ece8 100%);
 }
 
 .right-dashboard::before{
-    content:"";
-    position:absolute;
-    width:320px;
-    height:320px;
-    border-radius:50%;
-    background:rgba(178,127,86,.08);
-    top:-120px;
-    right:-120px;
-    filter:blur(20px);
+    content:""; position:absolute; width:320px; height:320px; border-radius:50%; background:rgba(178,127,86,.08); top:-120px; right:-120px; filter:blur(20px);
 }
-
 .right-dashboard::after{
-    content:"";
-    position:absolute;
-    width:250px;
-    height:250px;
-    border-radius:50%;
-    background:rgba(84,34,38,.05);
-    bottom:-80px;
-    left:-100px;
-    filter:blur(15px);
+    content:""; position:absolute; width:250px; height:250px; border-radius:50%; background:rgba(84,34,38,.05); bottom:-80px; left:-100px; filter:blur(15px);
 }
+.right-dashboard::-webkit-scrollbar { display: none; }
 
-  .right-dashboard::-webkit-scrollbar { display: none; }
-
-.showcase-title{
-    font-family:Georgia,serif;
-    font-size:32px;
-    color:var(--maroon-dark);
-    margin-bottom:6px;
-    position:relative;
-}
-
-.showcase-title::after{
-    content:"";
-    display:block;
-    width:70px;
-    height:3px;
-    margin-top:10px;
-    border-radius:10px;
-    background:linear-gradient(
-        90deg,
-        var(--gold),
-        transparent
-    );
-}
-  .showcase-sub { color: var(--muted); font-size: 13px; margin-bottom: 20px; }
+.showcase-title{ font-family:Georgia,serif; font-size:32px; color:var(--maroon-dark); margin-bottom:6px; position:relative; }
+.showcase-title::after{ content:""; display:block; width:70px; height:3px; margin-top:10px; border-radius:10px; background:linear-gradient(90deg, var(--gold), transparent); }
+.showcase-sub { color: var(--muted); font-size: 13px; margin-bottom: 20px; }
   
-  .compact-list { 
-    display: flex;
-    flex-direction: column;
-    gap: 12px; 
-    width: 100%;
-  }
+  .compact-list { display: flex; flex-direction: column; gap: 12px; width: 100%; }
   
   .product-card {
     background: var(--blush-light); 
     border-radius: 12px; overflow: hidden; cursor: pointer;
     box-shadow: 0 4px 15px rgba(58,20,23,.04); transition: transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s, background .3s;
     position: relative; border: 1px solid rgba(84,34,38,0.04);
-    display: flex; flex-direction: row;
-    width: 100%;
-    align-items: center;
+    display: flex; flex-direction: row; width: 100%; align-items: center;
   }
-  .product-card:hover { 
-    transform: translateY(-3px); 
-    box-shadow: 0 12px 25px rgba(58,20,23,.1);
-    background: #fff; 
-  }
-  
-  .product-card .thumb { 
-    width: 95px; 
-    height: 95px; 
-    flex-shrink: 0; 
-    overflow: hidden; 
-    background: var(--blush); 
-  }
+  .product-card:hover { transform: translateY(-3px); box-shadow: 0 12px 25px rgba(58,20,23,.1); background: #fff; }
+  .product-card .thumb { width: 95px; height: 95px; flex-shrink: 0; overflow: hidden; background: var(--blush); }
   .product-card .thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
   .product-card:hover .thumb img { transform: scale(1.06); }
   
-  .product-card .info { 
-    padding: 12px 20px; 
-    flex: 1; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-  }
+  .product-card .info { padding: 12px 20px; flex: 1; display: flex; flex-direction: column; justify-content: center; }
   .product-card .info h3 { font-family: Georgia, serif; font-size: 16px; color: var(--maroon-dark); margin-bottom: 2px; }
   .product-card .info .meta { font-size: 10px; color: var(--gold); letter-spacing: .5px; text-transform: uppercase; margin-bottom: 3px; font-weight: 600; }
   .product-card .info .desc { font-size: 12.5px; color: var(--muted); line-height: 1.4; }
 
- 
   footer {
     padding: 0 5vw; background: var(--maroon-dark); color: var(--blush); font-size: 11px;
-    display: flex; justify-content: space-between; align-items: center;
-    height: 50px;
+    display: flex; justify-content: space-between; align-items: center; height: 50px;
   }
   footer .flogo { font-family: Georgia, serif; color: var(--blush-light); letter-spacing: 2px; }
 
-  
+  /* PRODUCT DETAIL MODAL */
   .modal-overlay{
     position: fixed; inset: 0; background: rgba(30,14,15,0.8); z-index: 100;
     display: flex; align-items: center; justify-content: center;
@@ -243,12 +171,10 @@
   .modal-img-wrapper img{ width: 100%; height: 100%; object-fit: contain; }
 
   .modal-gallery-under {
-    display: flex; justify-content: center; gap: 8px; padding: 10px 0; background: var(--blush-light);
-    border-bottom: 1px solid var(--blush);
+    display: flex; justify-content: center; gap: 8px; padding: 10px 0; background: var(--blush-light); border-bottom: 1px solid var(--blush);
   }
   .modal-gallery-under img {
-    width: 44px; height: 44px; object-fit: cover; border-radius: 6px;
-    border: 2px solid var(--blush); cursor: pointer; transition: .2s ease;
+    width: 44px; height: 44px; object-fit: cover; border-radius: 6px; border: 2px solid var(--blush); cursor: pointer; transition: .2s ease;
   }
   .modal-gallery-under img:hover, .modal-gallery-under img.active { border-color: var(--maroon-dark); transform: translateY(-2px); }
 
@@ -262,17 +188,40 @@
     padding: 10px 24px; border-radius: 30px; text-decoration: none; font-size: 11.5px; letter-spacing: 1px;
     font-weight: 600; text-transform: uppercase; cursor: pointer; border: none;
   }
-  .buy-btn{background: var(--maroon-dark); color: var(--blush-light);}
-  .buy-btn:hover{background: var(--gold); color: #fff;}
-  .close-btn{background: transparent; border: 1px solid var(--blush) !important; color: var(--muted);}
-  .close-btn:hover{color: var(--maroon-dark); border-color: var(--maroon-dark) !important;}
   .modal-close-x{
     position: absolute; top: 12px; right: 12px; font-size: 16px; color: #fff;
     cursor: pointer; background: rgba(0,0,0,.4); border: none; width: 28px; height: 28px; border-radius: 50%;
     z-index: 10; display: flex; align-items: center; justify-content: center;
   }
 
- 
+  /* SHOP CHANNEL MODAL - FIXED & STYLED */
+  .shop-modal{
+    display:none; position:fixed; inset:0; background:rgba(30,14,15,0.8); z-index:9999; justify-content:center; align-items:center; backdrop-filter: blur(8px); padding: 20px;
+  }
+  .shop-modal-content{
+    background: #fff; color: var(--ink); padding: 35px 30px; border-radius: 16px; width: min(400px, 90vw); text-align: center; box-shadow: 0 25px 60px rgba(0,0,0,0.3); position: relative; animation: popup 0.3s cubic-bezier(.2,.8,.2,1);
+  }
+  .shop-modal-content h2{
+    color: var(--maroon-dark); font-family: Georgia, serif; font-size: 22px; margin-bottom: 20px; font-weight: 500;
+  }
+  .close-modal{
+    position:absolute; color: var(--muted); right:15px; top:12px; font-size:24px; cursor:pointer; transition: .2s;
+  }
+  .close-modal:hover{ color: var(--maroon-dark); }
+  
+  .buy-btn{
+    display:block; text-decoration:none; color:#fff; padding:14px; border-radius:30px; margin-top:12px; font-weight:bold; text-transform: uppercase; font-size: 12px; letter-spacing: 1px; transition:.3s; text-align: center;
+  }
+  .buy-btn:hover{ transform:scale(1.03); opacity: 0.9; }
+  .shopee-btn{ background:#fb6400; }
+  .tiktok-btn{ background:#000; }
+
+  @keyframes popup{
+    from{ transform:scale(.8); opacity:0; }
+    to{ transform:scale(1); opacity:1; }
+  }
+
+  /* RESPONSIVE MEDIA QUERIES */
   @media(max-width: 900px) {
     html, body { overflow: auto; height: auto; }
     .main-container { flex-direction: column; height: auto; }
@@ -282,111 +231,19 @@
     footer { flex-direction: column; gap: 6px; text-align: center; height: auto; padding: 20px; }
   }
 
- 
-@media(max-width:768px){
-
-    nav{
-        flex-wrap:wrap;
-        height:auto;
-        padding:12px 16px;
-    }
-
-    .nav-right-group{
-        width:100%;
-        justify-content:space-between;
-    }
-
-    .navlinks{
-        display:flex;
-        flex-wrap:wrap;
-        gap:10px;
-    }
-
-    .navlinks a{
-        display:inline-flex;
-        font-size:15px;
-    }
-
-    .social-nav{
-        gap:25px;
-    }
-}
+  @media(max-width:768px){
+    nav{ flex-wrap:wrap; height:auto; padding:16px; gap: 15px; }
+    .nav-right-group{ width:100%; justify-content:space-between; }
+    .navlinks{ display:flex; flex-wrap:wrap; gap:12px; }
+    .navlinks a{ display:inline-flex; font-size:12px; }
+    .social-nav{ gap:20px; }
+  }
 
   @media(max-width: 480px) {
     .product-card { flex-direction: column; align-items: flex-start; }
     .product-card .thumb { width: 100%; height: auto; aspect-ratio: 1/1; }
     .product-card .info { padding: 15px; }
   }
-
-.shop-modal{
-    display:none;
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.7);
-    z-index:9999;
-    justify-content:center;
-    align-items:center;
-}
-
-/* .shop-modal-content{
-    background:#fff;
-    color:#222;   
-} */
-
-.shop-modal-content h2{
-    color:#f8f6f6;
-    margin-bottom:20px;
-}
-
-.shop-modal-content .buy-btn{
-    color:#fff;
-}
-
-@keyframes popup{
-    from{
-        transform:scale(.8);
-        opacity:0;
-    }
-    to{
-        transform:scale(1);
-        opacity:1;
-    }
-}
-
-.close-modal{
-    position:absolute;
-    color: #f5eae7;
-    right:15px;
-    top:10px;
-    font-size:30px;
-    cursor:pointer;
-}
-
-.buy-btn{
-    display:block;
-    text-decoration:none;
-    color:#fff;
-    padding:15px;
-    border-radius:12px;
-    margin-top:15px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.buy-btn:hover{
-    transform:scale(1.05);
-}
-
-.shopee-btn{
-    background:#fb6400;
-}
-
-.tiktok-btn{
-    background:#000;
-}
-
-
-
 </style>
 </head>
 <body>
@@ -397,34 +254,24 @@
     <div class="navlinks">
       <a href="index.html">HOME</a>
       <a href="products.html">PRODUCTS</a>
-  <a class="cta-nav" href="#" onclick="openShopModal(); return false;">
-    SHOP NOW
-</a>
-<div id="shopModal" class="shop-modal">
-    <div class="shop-modal-content">
-        <span class="close-modal" onclick="closeShopModal()">&times;</span>
-
-        <h2>เลือกช่องทางการสั่งซื้อ</h2>
-
-        <a class="buy-btn shopee-btn"
-           href="https://shopee.co.th/z2hmqxc9hg"
-           target="_blank">
-            🛒 Shopee
-        </a>
-
-        <a class="buy-btn tiktok-btn"
-           href="https://vt.tiktok.com/ZSX6DQWST/"
-           target="_blank">
-            🎵 TikTok Shop
-        </a>
+      <a class="cta-nav" href="#" onclick="openShopModal(); return false;">SHOP NOW</a>
     </div>
-</div>
     <div class="social-nav">
-      <a href="https://www.tiktok.com/@lasha.official?lang=th-TH" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-      <a href="https://www.instagram.com/lash_a.official/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@lasha.official?lang=th-TH" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://www.instagram.com/lash_a.official/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
     </div>
   </div>
 </nav>
+
+<!-- FIXED SHOP CHANNEL MODAL -->
+<div id="shopModal" class="shop-modal">
+    <div class="shop-modal-content">
+        <span class="close-modal" onclick="closeShopModal()">&times;</span>
+        <h2>เลือกช่องทางการสั่งซื้อ</h2>
+        <a class="buy-btn shopee-btn" href="https://shopee.co.th/z2hmqxc9hg" target="_blank" rel="noopener noreferrer">🛒 Shopee</a>
+        <a class="buy-btn tiktok-btn" href="https://vt.tiktok.com/ZSX6DQWST/" target="_blank" rel="noopener noreferrer">🎵 TikTok Shop</a>
+    </div>
+</div>
 
 <div class="main-container">
   <section class="left-gallery">
@@ -505,25 +352,20 @@
   <div>&copy; 2026 LASHA LASHA. All Rights Reserved.</div>
 </footer>
 
-<!-- MODAL BOX AREA -->
+<!-- DYNAMIC PRODUCT OVERLAY FIXED WITH SAFE LINKS -->
 <div class="modal-overlay" id="modalOverlay">
   <div class="modal-box" id="modalBox">
     <button class="modal-close-x" onclick="closeModal()">✕</button>
-    
-    <div class="modal-img-wrapper">
-      <img id="modalImg" src="" alt="">
-    </div>
-    
+    <div class="modal-img-wrapper"><img id="modalImg" src="" alt=""></div>
     <div class="modal-gallery-under" id="modalGallery"></div>
-    
     <div class="m-body">
       <h3 id="modalName"></h3>
       <div class="m-meta" id="modalMeta"></div>
       <div class="m-desc" id="modalDesc"></div>
       <div class="modal-buttons">
-  <a class="buy-btn" href="https://shopee.co.th/z2hmqxc9hg" target="_blank" style="background: #fb6400;">สั่งซื้อผ่าน Shopee</a>
-  <a class="buy-btn" href="https://vt.tiktok.com/ZSX6DQWST/" target="_blank" style="background: #000;">สั่งซื้อผ่าน TikTok</a>
-  <!-- <button class="close-btn" onclick="closeModal()">ปิด</button> -->
+        <a class="buy-btn shopee-btn" href="https://shopee.co.th/z2hmqxc9hg" target="_blank" rel="noopener noreferrer">สั่งซื้อผ่าน Shopee</a>
+        <a class="buy-btn tiktok-btn" href="https://vt.tiktok.com/ZSX6DQWST/" target="_blank" rel="noopener noreferrer">สั่งซื้อผ่าน TikTok</a>
+      </div>
     </div>
   </div>
 </div>
@@ -561,16 +403,12 @@
       document.getElementById('modalMeta').textContent = card.dataset.meta;
       document.getElementById('modalDesc').textContent = card.dataset.desc;
       
-      modalImg.onerror = function() {
-        this.src = 'images/logo.png';
-      };
+      modalImg.onerror = function() { this.src = 'images/logo.png'; };
 
       galleryContainer.innerHTML = '';
       const gallerySources = [imgMain];
 
-      for (let i = 1; i <= 3; i++) {
-        gallerySources.push(`images/${folderName}/${i}.png`);
-      }
+      for (let i = 1; i <= 3; i++) { gallerySources.push(`images/${folderName}/${i}.png`); }
 
       const uniqueSources = [...new Set(gallerySources.filter(Boolean))];
       uniqueSources.forEach((src, index) => createThumb(src, index === 0));
@@ -583,16 +421,11 @@
     const thumb = document.createElement('img');
     thumb.src = src;
     if(isFirst) thumb.classList.add('active');
-
-    thumb.onerror = function() {
-      this.remove();
-    };
+    thumb.onerror = function() { this.remove(); };
 
     thumb.addEventListener('click', () => {
       modalImg.src = src;
-      modalImg.onerror = function() {
-        this.src = 'images/logo.png';
-      };
+      modalImg.onerror = function() { this.src = 'images/logo.png'; };
       galleryContainer.querySelectorAll('img').forEach(i => i.classList.remove('active'));
       thumb.classList.add('active');
     });
@@ -601,24 +434,15 @@
 
   function closeModal(){ overlay.classList.remove('active'); }
   overlay.addEventListener('click', e => { if(e.target === overlay) closeModal(); });
+
+  /* SHOP NOW MODAL LOGIC */
+  function openShopModal(){ document.getElementById("shopModal").style.display="flex"; }
+  function closeShopModal(){ document.getElementById("shopModal").style.display="none"; }
+  
+  window.addEventListener('click', function(e) {
+    const sModal = document.getElementById("shopModal");
+    if(e.target === sModal){ sModal.style.display="none"; }
+  });
 </script>
 </body>
-
-<script>
-function openShopModal(){
-    document.getElementById("shopModal").style.display="flex";
-}
-
-function closeShopModal(){
-    document.getElementById("shopModal").style.display="none";
-}
-
-window.onclick=function(e){
-    const modal=document.getElementById("shopModal");
-    if(e.target===modal){
-        modal.style.display="none";
-    }
-}
-</script>
-
 </html>
